@@ -1,0 +1,8 @@
+body {
+  background: #0a0a0a;
+  color: #ffffff;
+}
+
+.overscroll-y-none {
+  overscroll-behavior-y: none;
+}
