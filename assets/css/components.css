@@ -1,0 +1,38 @@
+@layer components {
+  /* === Listing card container === */
+  .group-card {
+    @apply rounded-[24px] bg-neutral-800 p-2 shadow-[0_1px_0_0_rgba(255,255,255,0.03)_inset,0_0_0_1px_rgba(255,255,255,0.03)_inset,0_0_0_1px_rgba(0,0,0,0.1),0_2px_2px_rgba(0,0,0,0.1),0_4px_4px_rgba(0,0,0,0.1),0_8px_8px_rgba(0,0,0,0.1)] transition-colors hover:bg-neutral-800/80 flex flex-col gap-4 h-full;
+  }
+
+  /* === Logo wrapper inside card === */
+  .group-card__logo {
+    @apply relative h-[50px] w-[50px] rounded-[20px] shadow-[0_1px_0_0_rgba(255,255,255,0.03)_inset,0_0_0_1px_rgba(255,255,255,0.03)_inset,0_0_0_1px_rgba(0,0,0,0.1),0_2px_2px_rgba(0,0,0,0.1),0_4px_4px_rgba(0,0,0,0.1),0_8px_8px_rgba(0,0,0,0.1) overflow-hidden;
+  }
+
+  /* === Title & price === */
+  .group-card__title {
+    @apply text-lg font-semibold leading-tight text-white;
+  }
+
+  .group-card__price {
+    @apply text-xs text-gray-300 flex items-center gap-1;
+  }
+
+  /* === Short description paragraph === */
+  .group-card__desc {
+    @apply text-sm text-gray-300 pb-2;
+  }
+
+  /* === Generic absolute‑fill image used for logos & gallery === */
+  .img-listing {
+    @apply object-cover absolute inset-0 h-full w-full rounded-[16px];
+  }
+
+  /* === Hover arrow icon (hidden by default, shown on card hover) === */
+  .group-card:hover .group-card__arrow {
+    @apply block;
+  }
+  .group-card__arrow {
+    @apply hidden text-white mr-4;
+  }
+}
